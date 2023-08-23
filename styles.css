@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax{
+    min-height: 1000px;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_1 {
+    background-image: url("church-gd0958eb4d_1920.png");
+}
+
+.section_2{
+    background-image: url("architecture-ge34a4a511_1920.png");    
+}
+
+.section_3 {
+    background-image: url("manhole-cover-g0de1f7204_1920.png");
+  }
+
+  .section_4 {
+    background-image: url("/alley-g5d4ec1ade_1920.png");
+  }
