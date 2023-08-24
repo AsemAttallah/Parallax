@@ -4,30 +4,61 @@
   
 }
 
-.parallax-container {
-  overflow: hidden;
-  position: relative;
-}
-
-.parallax{
-    min-height: 1000px;
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+  .container_all{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container{
+    height: 100%;
+    overflow-x: hidden;
+  
+    perspective:1px;
+  }
+  
+  .parallax_section{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 10vh 10vh;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  
+    overflow: hidden;
+  
+    transform-style: preserve-3d;
+  }
+  .parallax_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     background-size: cover;
-}
+    background-position: center center;
+    z-index: 1;
+    min-height: 100%; 
+  
+    transform: translate3d(0,0,-1px) scale(2);
+  }
+
+  
+
 .section_1 {
     background-image: url("church-gd0958eb4d_1920.png");
 }
 
 .section_2{
-    background-image: url("architecture-ge34a4a511_1920.png");    
+    background-image: url("architecture-ge34a4a511_1920.png"); 
 }
 
 .section_3 {
     background-image: url("manhole-cover-g0de1f7204_1920.png");
   }
 
-  .section_4 {
+.section_4 {
     background-image: url("alley-g5d4ec1ade_1920.png");
   }
+  
